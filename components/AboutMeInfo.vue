@@ -1,14 +1,21 @@
 <template>
-  <section id="aboutMeInfoSection" class="flex w-screen h-screen">
+  <section id="aboutMeInfoSection" class="flex w-screen h-screen px-8">
     <div id="aboutMePatternBackground"></div>
     <div class="container mx-auto">
-      <article id="aboutMeInfoArticle" class="flex flex-wrap mt-10">
-        <h1 class="text-white text-center text-4xl">Hello! my name is Luis Portillo</h1>
-        <img src="~assets/avatar.jpg" alt="Luis Portillo" class="w-16 h-16 rounded-full">
-        <p class="text-white mt-5 text-center text-xl">
-          I'm a 21 years old fullstack web developer that loves coding and learning something new every day.
+      <article id="aboutMeInfoArticle" class="flex flex-wrap h-full py-8">
+        <h1 class="text-white text-center sm:text-3xl md:text-4xl">Hello! my name is Luis Portillo</h1>
+        <p class="text-white mt-10 text-justify sm:text-md md:text-xl">
+          I'm a 21 years old fullstack web developer that loves coding and learning something new every day. 
+<strike> Although it sounds cliché</strike> I like the challenges that allow me to overcome and at the same time be able to create cool things.
+          <br>
           <br>If you continue scrolling, you can see some projects that I have developed.
         </p>
+
+        <img
+          src="~assets/avatar.jpg"
+          alt="Luis Portillo"
+          class="w-64 h-64 rounded-lg mx-auto mt-auto"
+        >
       </article>
     </div>
   </section>

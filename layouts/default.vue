@@ -22,7 +22,9 @@ export default {
           sizeStrategy: 'percent',
           wheelScrollDuration: 500
         },
-        scrollPanel: {},
+        scrollPanel: {
+          easing: 'easeInOutQuad'
+        },
         bar: {
           background: '#F2F2F2'
         },

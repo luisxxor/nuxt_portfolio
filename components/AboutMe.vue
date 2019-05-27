@@ -1,7 +1,7 @@
 <template>
   <section id="aboutMeSection" class="flex align-center justify-center w-screen h-screen">
     <div id="backgroundImage"></div>
-    <h1 id="aboutMeTitle" class="text-center text-5xl my-auto">
+    <h1 id="aboutMeTitle" class="text-center sm:text-4xl md:text-5xl my-auto">
       I'm Luis Portillo
       <br>a Fullstack Developer
     </h1>
@@ -16,7 +16,7 @@
   bottom: 5px;
   left: calc(50vw - 1.5rem);
   position: absolute;
-  animation: arrowFloating 1s infinite ease-in-out alternate-reverse;
+  animation: arrowFloating 2s infinite ease-in-out;
   cursor: pointer;
 }
 
@@ -41,10 +41,15 @@
 
 @keyframes arrowFloating {
   0% {
-    bottom: 5px;
+    transform: translateY(0);
   }
+
+  50% {
+    transform: translateY(6px);
+  }
+
   100% {
-    bottom: 10px;
+    transform: translateY(0);
   }
 }
 </style>
