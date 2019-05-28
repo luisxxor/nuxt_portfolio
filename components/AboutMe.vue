@@ -21,7 +21,7 @@
 }
 
 #backgroundImage {
-  background-image: url(~assets/laptopbackground.jpg);
+  background-image: url(~assets/laptopbackground500.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -37,6 +37,23 @@
 #aboutMeTitle {
   color: #e2e2e2;
   text-transform: capitalize;
+}
+
+@media only screen and (min-width: 501px) {
+  #backgroundImage {
+    background-image: url(~assets/laptopbackground1280.jpg);
+  }
+}
+@media only screen and (min-width: 1281px) {
+  #backgroundImage {
+    background-image: url(~assets/laptopbackground1900.jpg);
+  }
+}
+
+@media only screen and (min-width: 1901px) {
+  #backgroundImage {
+    background-image: url(~assets/laptopbackground.jpg);
+  }
 }
 
 @keyframes arrowFloating {
