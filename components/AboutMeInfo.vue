@@ -4,9 +4,10 @@
     <div class="container mx-auto">
       <article id="aboutMeInfoArticle" class="flex flex-wrap h-full py-8">
         <h1 class="text-white text-center sm:text-3xl md:text-4xl">Hello! my name is Luis Portillo</h1>
-        <p class="text-white mt-10 text-justify sm:text-md md:text-xl">
+        <p class="text-white mt-10 mb-6 text-justify lg:mx-32 sm:text-md md:text-xl">
           I'm a 21 years old fullstack web developer that loves coding and learning something new every day.
-          <strike>Although it sounds cliché</strike>I like the challenges that allow me to overcome and at the same time be able to create cool things.
+          <strike>Although it sounds cliché</strike>&nbsp;I like the challenges that allow me to overcome and at the same time be able to create cool things.
+          <br>
           <br>
           <br>If you continue scrolling, you can see some projects that I have developed.
         </p>
