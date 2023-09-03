@@ -1,12 +1,24 @@
 <template>
-  <section id="aboutMeSection" class="flex align-center justify-center w-screen h-screen">
-    <div id="backgroundImage"></div>
-    <h1 id="aboutMeTitle" class="text-center sm:text-4xl md:text-5xl my-auto">
+  <section
+    id="aboutMeSection"
+    class="flex align-center justify-center w-screen h-screen"
+  >
+    <div id="backgroundImage" ref="backgroundImage"></div>
+    <h1
+      id="aboutMeTitle"
+      class="text-center sm:text-4xl md:text-5xl my-auto animate__animated animate__backInUp animate__delay-1s"
+    >
       I'm Luis Portillo
-      <br>a Fullstack Developer
+      <br />a Fullstack Developer
     </h1>
-    <svg id="arrow" viewBox="0 0 20 20" class="fill-current text-white inline-block h-12 w-12">
-      <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path>
+    <svg
+      id="arrow"
+      viewBox="0 0 20 20"
+      class="fill-current text-white inline-block h-12 w-12"
+    >
+      <path
+        d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+      ></path>
     </svg>
   </section>
 </template>
@@ -32,6 +44,12 @@
   left: 0;
   z-index: -1;
   filter: brightness(60%) contrast(110%);
+  transition: 1s all ease-in-out;
+}
+
+#backgroundImage.darker {
+  filter: brightness(50%) contrast(110%);
+  transition: 1s all ease-in-out;
 }
 
 #aboutMeTitle {
@@ -70,3 +88,15 @@
   }
 }
 </style>
+
+<script>
+export default {
+  name: 'AboutMe',
+  mounted() {
+    setTimeout(() => {
+      console.log(this.$refs)
+      this.$refs.backgroundImage.classList.add('darker')
+    }, 1000)
+  }
+}
+</script>

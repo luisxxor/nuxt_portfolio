@@ -2,14 +2,22 @@
   <div>
     <vuescroll :ops="ops">
       <div class="container w-screen h-screen">
-        <nuxt/>
+        <nuxt />
       </div>
     </vuescroll>
   </div>
 </template>
 
 <script>
+import 'animate.css'
 import vuescroll from 'vuescroll'
+import WebFont from 'webfontloader'
+
+WebFont.load({
+  google: {
+    families: ['Raleway', 'Merriweather']
+  }
+})
 export default {
   components: {
     vuescroll
@@ -36,11 +44,7 @@ export default {
 }
 </script>
 
-
 <style>
-@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
-
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
