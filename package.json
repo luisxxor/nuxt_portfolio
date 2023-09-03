@@ -18,7 +18,7 @@
     "@nuxtjs/component-cache": "^1.1.5",
     "animate.css": "^4.1.1",
     "cross-env": "^5.2.0",
-    "nuxt": "^2.4.0",
+    "nuxt": "^2.17.1",
     "vuescroll": "^4.13.0-beta",
     "webfontloader": "^1.6.28"
   },
